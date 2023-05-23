@@ -8,9 +8,13 @@
 	<!-- tailwind-css script -->
 	<script src="https://cdn.tailwindcss.com"></script>
 	<!-- bootstrap css link -->
-	<link rel="stylesheet" href="libs/bootstrap5/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="libs/bootstrap5/bootstrap.min.css"> -->
 	<!-- swiper css link -->
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<!-- normalize css link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- custom css link -->
+	<link rel="stylesheet" href="css/style.css">
 	<title>Islomota</title>
 </head>
 
@@ -19,10 +23,87 @@
 	<div class="wrapper">
 		<!-- header start -->
 		<header class="header">
-			<div class="container">
-				<h1 class="text-3xl font-bold underline bg-gray">
-					Hello world!
-				</h1>
+			<div class="header-top bg-white border-b-2 border-gray">
+				<div class="container">
+					<div class="header-top__inner flex items-center justify-between py-1-5">
+						<div class="header-top__left-box flex items-center">
+							<img src="images/icons/clock.svg" alt="">
+							<span class="header-top__info ml-1 text-whitegray text-sm">Seshanba, May 9 - 2023</span>
+						</div>
+						<div class="header-top__right-box flex items-center">
+							<div class="header-top__dropdown relative">
+								<div class="flex items-center">
+									<img src="images/icons/speacer.svg" alt="">
+									<div class="flex mr-14">
+										<span class="header-top__time-info mx-1 text-whitegray text-sm">Namoz vaqtlari</span>
+										<img class="bottom-arow" src="images/icons/bottom-arow.svg" alt="">
+									</div>
+								</div>
+								<div class="dropdown-box d-none absolute bg-white z-10 p-2 hidden" data-dropdown>
+									<p class="text-whitegray text-sm">Value</p>
+									<p class="text-whitegray text-sm">Value</p>
+									<p class="text-whitegray text-sm">Value</p>
+								</div>
+							</div>
+							<div class="header-social__media flex items-center">
+								<span class="text-whitegray text-sm mr-1-2">Bizni kuzating:</span>
+								<div class="header-social__media-links flex items-center gap-1-5">
+									<a href="#!">
+										<img src="images/icons/facebook.svg" alt="">
+									</a>
+									<a href="#!">
+										<img src="images/icons/instagram.svg" alt="">
+									</a>
+									<a href="#!">
+										<img src="images/icons/telegram.svg" alt="">
+									</a>
+									<a href="#!">
+										<img src="images/icons/youtube.svg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom py-8">
+				<div class="container">
+					<div class="header-bottom__inner flex items-center justify-between">
+						<div class="header-bottom__logo">
+							<a href="#!" class="text-xl">Islomota.uz</a>
+						</div>
+						<div class="header-bottom__menu">
+							<ul class="nav flex items-center gap-1-5">
+								<li class="nav-item">
+									<a href="#!" class="nav-link active text-base font-normal">Bosh sahifa</a>
+								</li>
+								<li class="nav-item">
+									<a href="#!" class="nav-link text-whitegray text-base font-normal hover:text-black">Yangiliklar</a>
+								</li>
+								<li class="nav-item">
+									<a href="#!" class="nav-link text-whitegray text-base font-normal hover:text-black">Maqolalar</a>
+								</li>
+								<li class="nav-item relative">
+									<a href="#!" class="nav-link text-whitegray text-base font-normal hover:text-black flex items-center" data-open-dropdown>
+										<span class="pr-1">Islom</span>
+										<img class="bottom-arow" src="images/icons/bottom-arow.svg" alt="">
+									</a>
+									<div class="dropdown-box d-none absolute bg-white z-10 p-2 hidden" data-dropdown>
+										<p class="text-whitegray text-sm">Value</p>
+										<p class="text-whitegray text-sm">Value</p>
+										<p class="text-whitegray text-sm">Value</p>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a href="#!" class="nav-link text-whitegray text-base font-normal hover:text-black">Masjid haqida</a>
+								</li>
+								<li class="nav-item">
+									<a href="#!" class="nav-link text-whitegray text-base font-normal hover:text-black">Multimedia</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</header>
 		<!-- header end -->
@@ -49,7 +130,7 @@
 	</div>
 
 	<!-- script section -->
-	<script src="libs/bootstrap5/bootstrap.min.js"></script>
+	<!-- <script src="libs/bootstrap5/bootstrap.min.js"></script> -->
 	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/script.js"></script>
 
