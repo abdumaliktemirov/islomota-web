@@ -25,19 +25,39 @@ tailwind.config = {
 	}
 }
 
-const openDropdown = document.querySelectorAll('[data-open-dropdown]'),
-	dropdown = document.querySelectorAll('[data-dropdown]'),
+const openDropdown = document.querySelectorAll('.open-dropdown'),
+	dropdown = document.querySelectorAll('.dropdown-box'),
 	bottomArow = document.querySelectorAll('.bottom-arow');
 
 openDropdown.forEach((btn, index) => {
 	btn.addEventListener('click', (e) => {
 		dropdown.forEach((item, itemIndex) => {
-			if (itemIndex != index) {
-				item.classList.toggle('active')
+			if (itemIndex == index) {
+				item.classList.toggle('active');
+			} else{
+				item.classList.remove('active');
 			}
 		})
-		bottomArow.forEach(item => {
-			item.classList.toggle('active')
+		bottomArow.forEach((item, itemIndex) => {
+			if(itemIndex == index) {
+				item.classList.toggle('active');
+			} else{
+				item.classList.remove('active');
+			}
 		})
 	})
 })
+console.log(openDropdown);
+console.log(dropdown);
+// openDropdown.forEach((btn, index) => {
+// 	btn.addEventListener('click', (e) => {
+// 		dropdown.forEach((item, itemIndex) => {
+// 				item.classList.toggle('active')
+// 		})
+// 		bottomArow.forEach((item, itemIndex) => {
+// 			if (itemIndex != index) {
+// 				item.classList.toggle('active')
+// 			}
+// 		})
+// 	})
+// })
