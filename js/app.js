@@ -5,6 +5,8 @@ tailwind.config = {
 				whitegray: 'rgba(102, 102, 102, 1)',
 				gray: ' rgba(102, 102, 102, 0.2)',
 				black: 'rgba(30, 30, 30, 1)',
+				'videos-1': "rgba(0, 0, 0, 0.5)",
+
 			},
 			padding: {
 				'8': '32px',
@@ -29,10 +31,10 @@ tailwind.config = {
 		backgroundImage: {
 			'videos-1': "url('images/videos-main-1.png')",
 			'videos-2': "url('images/videos-main-2.png')",
-			'videos-3': "url('images/videos-1.png')",
-			'videos-4': "url('images/videos-2.png')",
-			'videos-5': "url('images/videos-3.png')",
-			'videos-6': "url('images/videos-4.png')",
+			'book':     "url('images/videos-1.png')",
+			'videos-4': "url('/images/videos-2.png')",
+			'videos-5': "url('/images/videos-3.png')",
+			'videos-6': "url('/images/vidos-4.png')",
 		}
 
 	}
