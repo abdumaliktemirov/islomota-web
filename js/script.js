@@ -8,15 +8,16 @@ tailwind.config = {
 			},
 			padding: {
 				'8': '32px',
-			}
+			},
+			spacing: {
+				'1': '10px',
+				'1-2': '12px',
+				'1-5': '15px',
+				'2': '20px',
+				'14': '50px',
+			},
 		},
-		spacing: {
-			'1': '10px',
-			'1-2': '12px',
-			'1-5': '15px',
-			'2': '20px',
-			'14': '50px',
-		},
+		
 		fontSize: {
 			sm: '12px',
 			base: '14px',
@@ -24,7 +25,7 @@ tailwind.config = {
 			xxl: '36px'
 		},
 		colors: {
-			'main-bc': ' rgba(213, 230, 240, 0.2);',
+			'main-bc': ' rgba(213, 230, 240, 0.2);'
 		},
 		backgroundImage: {
 			'videos-1': "url('images/videos-main-1.png')",
@@ -33,7 +34,12 @@ tailwind.config = {
 			'videos-4': "url('images/videos-2.png')",
 			'videos-5': "url('images/videos-3.png')",
 			'videos-6': "url('images/videos-4.png')",
+		},
+		backgroundSize: {
+
+			'100%': "100%"
 		}
+		
 
 	}
 }
