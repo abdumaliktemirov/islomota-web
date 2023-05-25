@@ -16,14 +16,20 @@ tailwind.config = {
 				'2': '20px',
 				'14': '50px',
 			},
+			fontSize: {
+				base: '14px',
+				"15": '15px',
+				xl: '20px',
+				xxl: '36px',
+				ten: '10px',
+				
+			},
+			backgroundSize: {
+				'100%': "100%",
+			},
 		},
 		
-		fontSize: {
-			sm: '12px',
-			base: '14px',
-			xl: '20px',
-			xxl: '36px'
-		},
+	
 		colors: {
 			'main-bc': ' rgba(213, 230, 240, 0.2);'
 		},
@@ -35,10 +41,7 @@ tailwind.config = {
 			'videos-5': "url('images/videos-3.png')",
 			'videos-6': "url('images/videos-4.png')",
 		},
-		backgroundSize: {
-
-			'100%': "100%"
-		}
+	
 		
 
 	}
